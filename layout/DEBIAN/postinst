@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+PREFIX=
+if [[ -L /var/jb && -d /var/jb ]]; then
+    PREFIX="/var/jb"
+fi
+
+chown -R mobile:mobile $PREFIX/var/mobile/Documents/dev.traurige/ || true
